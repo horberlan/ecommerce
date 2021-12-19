@@ -1,0 +1,172 @@
+Arguments: 
+  /Users/matthewthomas/.nvm/versions/node/v14.16.0/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/matthewthomas/.rbenv/shims:/Users/matthewthomas/.nvm/versions/node/v14.16.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/matthewthomas/.rbenv/shims
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/matthewthomas/Desktop/0MATTHEW/Desktop/SATIYN/eCommerce/CODE/Frontend/package.json: Unexpected token } in JSON at position 1319
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "the-healthy-fermentary",
+    "version": "2.0.0",
+    "description": "eCommerce Application",
+    "main": "index.js",
+    "scripts": {
+      "dev": "next -p 7777",
+      "build": "next build",
+      "start": "next start -p 7777",
+      "test": "NODE_ENV=test jest --watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@apollo/client": "^3.3.8",
+      "@fontsource/inter": "^4.5.0",
+      "@fontsource/montserrat": "^4.2.1",
+      "@material-ui/core": "^4.11.4",
+      "@material-ui/icons": "^4.11.2",
+      "@material-ui/styles": "^4.11.4",
+      "@segment/snippet": "^4.15.3",
+      "@stripe/react-stripe-js": "^1.4.1",
+      "@stripe/stripe-js": "^1.15.0",
+      "babel-core": "^7.0.0-bridge.0",
+      "clsx": "^1.1.1",
+      "cookies": "^0.8.0",
+      "framer-motion": "^4.1.17",
+      "graphql": "^15.4.0",
+      "graphql-tag": "^2.11.0",
+      "lodash": "^4.17.21",
+      "next": "12",
+      "nprogress": "^0.2.0",
+      "prop-types": "^15.7.2",
+      "react": "17.0.2",
+      "react-device-detect": "^1.17.0",
+      "react-dom": "^17.0.1",
+      "react-icons": "^4.2.0",
+      "react-player": "^2.9.0",
+      "react-spinners": "^0.11.0",
+      "react-use": "^17.3.1",
+      "react-uuid": "^1.0.2",
+      "rebass": "^4.0.7",
+      "styled-components": "^5.2.3",
+      "styled-system": "^5.1.5",
+      "twin.macro": "^2.8.1",
+      "video-react": "^0.14.1",
+    },
+    "devDependencies": {
+      "@apollo/react-testing": "^4.0.0",
+      "@babel/core": "^7.12.9",
+      "@babel/preset-env": "^7.12.7",
+      "@testing-library/jest-dom": "^5.11.6",
+      "@testing-library/react": "^11.2.2",
+      "@testing-library/user-event": "^12.3.0",
+      "autoprefixer": "^10.4.0",
+      "babel-eslint": "^10.1.0",
+      "babel-jest": "^26.6.3",
+      "babel-plugin-styled-components": "^1.12.0",
+      "casual": "^1.6.2",
+      "eslint": "^7.8.1",
+      "eslint-config-airbnb": "^18.2.0",
+      "eslint-config-next": "^11.0.1",
+      "eslint-config-prettier": "^6.11.0",
+      "eslint-config-wesbos": "1.0.1",
+      "eslint-plugin-html": "^6.1.0",
+      "eslint-plugin-import": "^2.22.0",
+      "eslint-plugin-jsx-a11y": "^6.3.1",
+      "eslint-plugin-prettier": "^3.1.4",
+      "eslint-plugin-react": "^7.20.6",
+      "eslint-plugin-react-hooks": "^4.1.2",
+      "jest": "^26.6.3",
+      "postcss": "^8.3.11",
+      "prettier": "^2.1.1",
+      "react-test-renderer": "^17.0.1",
+      "tailwindcss": "^2.2.19",
+      "typescript": "^4.3.5"
+    },
+    "eslintConfig": {
+      "extends": [
+        "wesbos"
+      ]
+    },
+    "jest": {
+      "setupFilesAfterEnv": [
+        "./jest.setup.js"
+      ]
+    },
+    "//": "This is our babel config, I prefer this over a .babelrc file",
+    "babel": {
+      "env": {
+        "development": {
+          "presets": [
+            "next/babel"
+          ],
+          "plugins": [
+            [
+              "styled-components",
+              {
+                "ssr": true,
+                "displayName": true
+              }
+            ]
+          ]
+        },
+        "production": {
+          "presets": [
+            "next/babel"
+          ],
+          "plugins": [
+            [
+              "styled-components",
+              {
+                "ssr": true,
+                "displayName": true
+              }
+            ]
+          ]
+        },
+        "test": {
+          "presets": [
+            [
+              "next/babel",
+              {
+                "preset-env": {
+                  "modules": "commonjs"
+                }
+              }
+            ]
+          ],
+          "plugins": [
+            [
+              "styled-components",
+              {
+                "ssr": true,
+                "displayName": true
+              }
+            ]
+          ]
+        }
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
